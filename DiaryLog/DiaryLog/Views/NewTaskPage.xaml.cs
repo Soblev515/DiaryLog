@@ -8,11 +8,11 @@ using Xamarin.Forms.Xaml;
 
 namespace DiaryLog.Views
 {
-    public partial class NewItemPage : ContentPage
+    public partial class NewTaskPage : ContentPage
     {
-        public Item Item { get; set; }
+        public TaskItem Item { get; set; }
 
-        public NewItemPage()
+        public NewTaskPage()
         {
             InitializeComponent();
             BindingContext = new NewItemViewModel();

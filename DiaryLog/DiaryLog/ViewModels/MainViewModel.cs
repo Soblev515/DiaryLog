@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace DiaryLog.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class MainViewModel : BaseViewModel
     {
-        public AboutViewModel()
+        public CultureInfo Culture => new CultureInfo("ru-RU");
+        public MainViewModel()
         {
-            Title = "About";
+            Title = "Main";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 

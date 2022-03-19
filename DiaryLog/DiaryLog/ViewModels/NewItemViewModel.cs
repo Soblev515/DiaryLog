@@ -49,7 +49,7 @@ namespace DiaryLog.ViewModels
 
         private async void OnSave()
         {
-            Item newItem = new Item()
+            TaskItem newItem = new TaskItem()
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
